@@ -77,7 +77,7 @@ module.exports = function (app, db) {
         res.redirect('/');
     });
 
-  // place middle ware for 404 at the end of route stack
+  // place middleware for 404 at the end of route stack
   // if the request is not caught by any of the route we set,
   // respond with 404 Not Found
   app.use((req, res, next) => {
