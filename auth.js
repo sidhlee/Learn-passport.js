@@ -10,7 +10,7 @@ module.exports = function (app,db) {
     secret: process.env.SESSION_SECRET,
     
     // save unmodified session to keep them alive
-    // usually session middleware ddo this for you by 
+    // usually session middleware do this for you by 
     // calling Session.touch() to reset req.session.cookie.maxAge 
     resave: true,  
     
